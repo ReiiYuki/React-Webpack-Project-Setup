@@ -176,6 +176,26 @@ Node.js
   $ npm i react react-dom --save
   ```
 
+  We have to install this two modules because they are important libraries of React.
+
+13. Create `index.html`
+
+  ```html
+  <!Doctype html>
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <title>React and Webpack Setup Tutorial</title>
+    </head>
+    <body>
+      <div id="app"></div>
+      <script type="text/javascript" src="dist/js/bundle.js"></script>
+    </body>
+  </html>
+  ```
+
+  Make sure that lower div it have script which src is your output file from our webpack.
+
 ## Licence
 
 ```
