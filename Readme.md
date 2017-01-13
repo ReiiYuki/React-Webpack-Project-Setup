@@ -30,7 +30,54 @@ Node.js
   license: (Put your project licence)
   ```
 
+3. Install Webpack with following command :
 
+  ```
+  $ npm i webpack --save-dev
+  ```
+
+  Why we use Webpack ? You might have this question in your head, is this true?
+
+  * Webpack can combine many Javascript modules together, so it allow you to develop Javascript with any style that you like such as ES6.
+  * You can install loader to webpack. Loader is used for making our Javascript can work with any type of file based on that loader.
+
+4. Create file which is called `webpack.config.js`
+
+  ```js
+  var path = require('path')
+
+  module.exports = {
+    entry : path.resolve(__dirname, 'src/js/index.js'),
+    output : {
+      publicPath :'/dist/js/',
+      path : path.resolve(__dirname, 'dist/js'),
+      filename : 'bundle.js'
+    },
+    module: {
+      loaders : [
+
+      ]
+    }
+  }
+  ```
+
+  Wow ! WTF ! Why do we have to write something like this? I will explain each path of webpack to you.
+
+  Why do we require path in webpack ?
+  * Because it is the modules for joining the path of directory
+
+  Entry is entry file which our web application will start from here.
+
+  Output show the information of output file after we build our project.(Production) It contains this following part.
+  * publicPath is path of your output file in the server. For example we put `/dist/js/` so it will be `http://server/dist/js/`.
+  * path is path of local disk directory which store the output file.
+  * filename is name of your output file which we will reference to it in our `index.html` later.
+
+  Module is used for filling the module that we will use in our project.
+
+  Loader is one of the module as I said before that is used for making our javascript can work with each type of file.
+
+To be add soon ... 
 
 ## Licence
 
