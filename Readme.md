@@ -170,6 +170,12 @@ Node.js
 
   Scripts are commands that we set and it will run when you call `npm run something` like `npm run dev`
 
+12. Install `react` and `react-dom` with this following commands :
+
+  ```
+  $ npm i react react-dom --save
+  ```
+
 ## Licence
 
 ```

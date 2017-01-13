@@ -4,8 +4,8 @@
   "description": "React Webpack Setup Tutorial",
   "main": "index.js",
   "scripts": {
-    "dev" : "webpack-dev-server --hot --inline --progress --open",
-    "build" : "webpack --progress --colors --optimize-min"
+    "dev": "webpack-dev-server --hot --inline --progress --open",
+    "build": "webpack --progress --colors --optimize-min"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,10 @@
     "url": "https://github.com/ReiiYuki/React-Webpack-Project-Setup/issues"
   },
   "homepage": "https://github.com/ReiiYuki/React-Webpack-Project-Setup#readme",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
   "devDependencies": {
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
