@@ -30,6 +30,10 @@ Node.js
   license: (Put your project licence)
   ```
 
+  So the file called `package.json` is appeared in your project directory.
+
+  `package.json` is file which tell the information about your project. It also collect the information about dependencies that you use in the project, so you can install all of dependencies of your project in other machine easily if you have `package.json`.
+
 3. Install Webpack with following command :
 
   ```
