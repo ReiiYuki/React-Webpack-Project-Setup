@@ -81,7 +81,75 @@ Node.js
 
   Loader is one of the module as I said before that is used for making our javascript can work with each type of file.
 
-To be add soon ... 
+5. Install `babel-core` by this following command :
+
+  ```
+  $ npm i babel-core --save-dev
+  ```
+
+  What is babel ?
+  Babel is module that allow you to write Javascript in new style like ES6, ES2017.
+
+6. Install babel-preset that you want.
+
+  There are many style of script that you can use like ES2015(ES6) ES2016(ES7) ES2017(ES8).
+
+  Then you install it by following command :
+
+  ```
+  $ npm i babel-preset-es2015 --save-dev
+  ```
+
+  *** Note :
+    * If it's too difficult to make decision which version you will use. You can choose `babel-preset-latest` which is combination of ES2015,ES2016,ES2017. In the future if there are ES2018 so it will be part of latest.
+
+  Moreover there are many stage of style of script that you write like stage-0 stage-1 stage-2 stage-3. So you choose it, then install with this following command :
+
+  ```
+  $ npm i babel-preset-stage-0 --save-dev
+  ```
+
+  Last thing about babel preset that we will install is `babel-preset-react`. Do you know why? Because we gonna write React. LOL
+
+  ```
+  $ npm i babel-preset-react --save-dev
+  ```
+
+7. Create file called `.babelrc` and fill presets with your installed presets.
+
+  ```json
+  {
+    "presets" : ["react","stage-0","es2015"]
+  }
+  ```
+
+  .babelrc will make you write script based on your installed presets.
+
+8. Install `babel-loader` with this following command :
+
+  ```
+  $ npm i babel-loader --save-dev
+  ```
+
+  This is our first loader for load javascript file and compile it based on our babel presets.
+
+9. Edit your `webpack.config.js` and to apply our babel loader in loaders.
+
+  ```js
+  loaders : [
+    {
+      test : /\.js$/,
+      exclude: /node_modules/,
+      loader : 'babel-loader'
+    }
+  ]
+  ```
+
+  Test is type of your file that you will use loader load it.
+
+  Exclude is some file or directory that you doesn't want to use loader load it.
+
+  Loader is loader that you will use to load file in test.
 
 ## Licence
 

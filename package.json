@@ -25,6 +25,11 @@
   "homepage": "https://github.com/ReiiYuki/React-Webpack-Project-Setup#readme",
   "dependencies": {},
   "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
     "webpack": "^1.14.0"
   }
 }
