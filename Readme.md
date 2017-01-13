@@ -219,6 +219,8 @@ Node.js
   $ npm run dev
   ```
 
+Note : If you want to use css sass or other type of files you can find loader of it and install then setup it in webpack.
+
 ## Licence
 
 ```
