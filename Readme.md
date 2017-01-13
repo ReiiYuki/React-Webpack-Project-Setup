@@ -151,6 +151,25 @@ Node.js
 
   Loader is loader that you will use to load file in test.
 
+10. Install `webpack-dev-server` by this following command :
+
+  ```
+  $ npm i webpack-dev-server --save-dev
+  ```
+
+  `webpack-dev-server` is used for building your code for production or making you see that update of your code real-time like.
+
+11. Edit `package.json` for apply our webpack-dev-server command.
+
+  ```json
+  "scripts": {
+    "dev" : "webpack-dev-server --hot --inline --progress --open",
+    "build" : "webpack --progress --colors --optimize-min"
+  }
+  ```
+
+  Scripts are commands that we set and it will run when you call `npm run something` like `npm run dev`
+
 ## Licence
 
 ```
