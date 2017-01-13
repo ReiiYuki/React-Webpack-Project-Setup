@@ -196,6 +196,29 @@ Node.js
 
   Make sure that lower div it have script which src is your output file from our webpack.
 
+14. Create `index.js`
+
+  ```js
+  import React, { Component } from 'react'
+  import { render } from 'react-dom'
+
+  class HelloWorld extends Component {
+    render(){
+      return (
+        <h1>Hello World</h1>
+      )
+    }
+  }
+
+  render (<HelloWorld/>, document.getElementById('app'))
+  ```
+
+  Now try to see our result by following command :
+
+  ```
+  $ npm run dev
+  ```
+
 ## Licence
 
 ```
