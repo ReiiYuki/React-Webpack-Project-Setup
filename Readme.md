@@ -2,9 +2,35 @@
 
 Most of people said that creating project with React and Webpack is very hard. In fact it isn't hard like that if you understand each of component that we have to setup to the project. So I create this tutorial, because I am the one of React Starter who think setting up the project is fucking hard. I hope that you will have more happy life in React development after you finish this tutorial.
 
+## Requirement
+
+```
+Node.js
+```
+
 ## Let's start !!!
 
-To be add soon ...
+1. Initialize Project with this following command :
+
+  ```
+  $ npm init
+  ```
+
+2. Fill the information
+
+  ```
+  name: (Type your project in lowercase)
+  version: (Put any number that you want)
+  description: (Any description about your project)
+  entry point: (Entry point file of your project in this project I use index.js)
+  test command: (Don't have to input right now)
+  git repository: (Input your git repository)
+  keywords: (Input any keywords of your project)
+  author: (Put your name)
+  license: (Put your project licence)
+  ```
+
+
 
 ## Licence
 
